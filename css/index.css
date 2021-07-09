@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header section nav footer aside article main figure {
+    display: block;
+}
+
+body {
+    font-family: "Roboto"
+}
+
+h2 {
+    font-family: 'Signika', sans-serif;
+}
+
+header {
+    background-color: #EEECF5;
+    left: 0;
+    margin: 0 auto;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+}
+
+header ul li {
+    list-style: none;
+    font-size: 24px;
+    display: inline;
+    margin: 0 10px;
+    font-family: 'Signika', sans-serif;
+    margin-left: 15px;
+}
+
+header ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header ul li.active a {
+    border-bottom: 3px solid #4E4998;
+}
+
+header .header__left ul li a:hover {
+    color: black;
+    border-bottom: 3px solid #4E4998;
+    text-decoration: none;
+}
+
+header ul li i {
+    color: #4E4998;
+}
+
+/* Carousel */
+
+.carousel {
+    position: relative;
+}
+
+.item {
+    position: relative;
+}
+
+.carousel img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+
+.carousel .owl-carousel .owl-nav .owl-prev, .carousel .owl-carousel .owl-nav button.owl-next {
+    font-size: 100px;
+    position: absolute;
+    color: #9087BF;
+    top: 30%;
+}
+
+.carousel .owl-carousel .owl-nav .owl-prev {
+    left: 6%;
+}
+
+.carousel .owl-carousel .owl-nav button.owl-next {
+    right: 6%;
+}
+
+.carousel .owl-carousel .owl-nav .owl-prev:hover, .carousel .owl-carousel .owl-nav button.owl-next:hover {
+    background-color: none;
+    color: white;
+}
+
+/* HÀNG CÓ SẴN */
+
+.available {
+    margin-top: 10%;
+    margin-bottom:10%;
+}
+
+.available h2 {
+    margin-bottom: 5%;
+}
+
+.available h2 a {
+    font-family: 'Signika', sans-serif;
+    border-bottom: 5px solid #D2C1DD;
+    text-decoration: none;
+    color: black;
+}
+
+.available .owl-stock .owl-nav .owl-prev, .available .owl-stock .owl-nav button.owl-next {
+    font-size: 100px;
+    position: absolute;
+    color: #9087BF;
+    top: 30%;
+}
+
+.available .owl-stock .owl-nav button.owl-prev {
+    background-color: none;
+    left: 0;
+}
+
+.available .owl-stock .owl-nav button.owl-next {
+    right: 0;
+}
+
+.available .owl-stock .owl-nav .owl-prev:hover, .available .owl-stock .owl-nav button.owl-next:hover {
+    background-color: none;
+    color: white;
+}
+
+.available .card .card-body .card-title {
+    text-align: center;
+}
+
+.available .card .card-body .price {
+    color: #9087BF;
+    font-family: 'Signika', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.available .seeAll {
+    background-color: none;
+    color: black;
+    font-family: 'Signika', sans-serif;
+    align-items: center;
+    border: 3px solid #D5B5D6;
+    width: 100px;
+    
+}
+.available .seeAll:hover {
+    background-color: #4E4998;
+    color: white;
+    font-family: 'Signika', sans-serif;
+    align-items: center;
+}
+
+/* HÀNG ĐẶT TRƯỚC */
+.booked {
+    margin-top: 10%;
+    margin-bottom:10%;
+}
+
+.booked h2 {
+    margin-bottom: 5%;
+}
+
+.booked h2 a {
+    font-family: 'Signika', sans-serif;
+    border-bottom: 5px solid #D2C1DD;
+    text-decoration: none;
+    color: black;
+}
+
+.booked .owl-stock .owl-nav .owl-prev, .booked .owl-stock .owl-nav button.owl-next {
+    font-size: 100px;
+    position: absolute;
+    color: #9087BF;
+    top: 30%;
+}
+.booked .item a{
+    text-decoration: none;
+    color: black;
+}
+
+.booked .owl-stock .owl-nav button.owl-prev {
+    background-color: none;
+    left: 0;
+}
+
+.booked .owl-stock .owl-nav button.owl-next {
+    right: 0;
+}
+
+.booked .owl-stock .owl-nav .owl-prev:hover, .booked .owl-stock .owl-nav button.owl-next:hover {
+    background-color: none;
+    color: white;
+}
+
+.booked .card .card-body .card-title {
+    text-align: center;
+}
+
+.booked .card .card-body .price {
+    color: #9087BF;
+    font-family: 'Signika', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+.booked .seeAll {
+    background-color: none;
+    color: black;
+    font-family: 'Signika', sans-serif;
+    align-items: center;
+    border: 3px solid #D5B5D6;
+    width: 100px;
+    
+}
+.booked .seeAll:hover {
+    background-color: #4E4998;
+    color: white;
+    font-family: 'Signika', sans-serif;
+    align-items: center;
+}
+
