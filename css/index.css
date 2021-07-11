@@ -65,6 +65,7 @@ header ul li i {
 
 .carousel {
     position: relative;
+    height: 100%;
 }
 
 .item {
@@ -75,6 +76,7 @@ header ul li i {
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
+    height: 100%;
 }
 
 .owl-dots {
@@ -107,7 +109,7 @@ header ul li i {
 
 .available {
     margin-top: 10%;
-    margin-bottom:10%;
+    margin-bottom: 10%;
 }
 
 .available h2 {
@@ -159,9 +161,10 @@ header ul li i {
     font-family: 'Signika', sans-serif;
     align-items: center;
     border: 3px solid #D5B5D6;
-    width: 100px;
-    
+    width: 130px;
+    height: 30px;
 }
+
 .available .seeAll:hover {
     background-color: #4E4998;
     color: white;
@@ -170,13 +173,18 @@ header ul li i {
 }
 
 /* HÀNG ĐẶT TRƯỚC */
+
 .booked {
     margin-top: 10%;
-    margin-bottom:10%;
+    margin-bottom: 10%;
 }
 
 .booked h2 {
     margin-bottom: 5%;
+}
+
+.booked .item img {
+    object-fit: cover;
 }
 
 .booked h2 a {
@@ -192,7 +200,8 @@ header ul li i {
     color: #9087BF;
     top: 30%;
 }
-.booked .item a{
+
+.booked .item a {
     text-decoration: none;
     color: black;
 }
@@ -221,15 +230,17 @@ header ul li i {
     font-size: 24px;
     text-align: center;
 }
+
 .booked .seeAll {
     background-color: none;
     color: black;
     font-family: 'Signika', sans-serif;
     align-items: center;
     border: 3px solid #D5B5D6;
-    width: 100px;
-    
+    width: 130px;
+    height: 30px;
 }
+
 .booked .seeAll:hover {
     background-color: #4E4998;
     color: white;
@@ -237,3 +248,269 @@ header ul li i {
     align-items: center;
 }
 
+/* BLOG */
+
+.blog {
+    width: 100%;
+    background-color: #EEECF5;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+.blog h2 a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 4px solid #D2C1DD;
+    font-family: 'Signika', sans-serif;
+}
+
+.left__blog {
+    width: 40%;
+}
+
+.right__blog {
+    width: 40%;
+}
+
+.blog .line {
+    width: 20%;
+}
+
+.blog .line .left__line {
+    width: 4px;
+    height: 100%;
+    background-color: #9087BF;
+    margin: 0 auto;
+}
+
+.blog .line .right__line {
+    width: 4px;
+    height: 100%;
+    background-color: #9087BF;
+    margin: 0 auto;
+}
+
+.blog .left__img, .blog .right__img {
+    margin: 50px 0;
+    position: relative;
+    object-fit: cover;
+}
+
+.left__blog .blog__info, .right__blog .blog__info {
+    position: absolute;
+    background: rgba(196, 196, 196, 0.6);
+    left: 13%;
+    top: 0;
+    margin: 0 auto;
+    padding: 0 100px;
+    transition: all .5s;
+    width: 74%;
+    height: 100%;
+    padding: 70px;
+    /*chữ*/
+    opacity: 0;
+}
+
+.blog__info h5 {
+    border-bottom: 3px solid #9087BF;
+    border-top: 3px solid #9087BF;
+    padding: 10px;
+    margin: 0 auto;
+    font-family: Signika, sans-serif;
+}
+
+.left__blog:hover .blog__info, .right__blog:hover .blog__info {
+    opacity: 1;
+    transform: translateY(0);
+    cursor: pointer;
+}
+
+/* Ideas customers */
+
+.ideas-customers {
+    color: #4E4A99;
+}
+
+.ideas-customers h2 {
+    margin-bottom: 7%;
+}
+
+.ideas-customers h2 a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 4px solid #D2C1DD;
+    font-family: 'Signika', sans-serif;
+}
+
+.ideas-customers .customer-1, .ideas-customers .customer-2, .ideas-customers .customer-3 {
+    transform: rotate(-45deg);
+    transition: all .5s;
+    border: 4px solid #4E4A99;
+    position: relative;
+    width: 230px;
+    height: 230px;
+    z-index: 1;
+}
+
+.ideas-customers .customer-1__img {
+    background-image: url('../img/customer\ 1.png');
+    background-size: cover;
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+    top: -41.5%;
+    position: relative;
+}
+
+.ideas-customers .customer-2__img {
+    background-image: url('../img/customer\ 2.png');
+    background-size: cover;
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+    top: -41.5%;
+    position: relative;
+}
+
+.ideas-customers .customer-3__img {
+    background-image: url('../img/customer\ 3.png');
+    background-size: cover;
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+    top: -41.5%;
+    position: relative;
+}
+
+.ideas-customers .idea-1, .ideas-customers .idea-2, .ideas-customers .idea-3 {
+    width: 230px;
+    height: 140%;
+    background-color: #D2C1DD;
+    opacity: 0;
+    position: absolute;
+    top: 101%;
+    left: -2%;
+}
+
+.ideas-customers .customer-1:hover .idea-1, .ideas-customers .customer-2:hover .idea-2, .ideas-customers .customer-3:hover .idea-3 {
+    opacity: 1;
+}
+
+.ideas-customers .customer-1:hover, .ideas-customers .customer-2:hover, .ideas-customers .customer-3:hover {
+    transform: rotate(0);
+}
+
+.ideas-customers p {
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+.ideas-customers h3 {
+    margin: 30px 0;
+}
+
+.ideas-customers .name {
+    margin-right: 30%;
+    position: relative;
+    bottom: 33%;
+}
+
+/* CHÍNH SÁCH  */
+
+.policy {
+    margin-top: 5%;
+    width: 100%;
+    height: 70%;
+    background-color: #EEECF5;
+    font-family: 'Signika', sans-serif;
+}
+
+.policy .policy__item {
+    margin: 40px 0;
+    border: 3px solid #4E4A99;
+    width: 219.04px;
+    height: 90.19px;
+    padding: 20px;
+    text-align: center;
+}
+
+.policy .policy__item i {
+    color: #4E4A99;
+}
+
+.policy .policy__item:hover {
+    background-color: #4E4998;
+    color: white;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.policy .policy__item:hover i {
+    color: white;
+}
+
+/* LIÊN HỆ VÀ MAP */
+
+footer {
+    margin-top: 5%;
+    width: 100%;
+    height: 70%;
+    background-color: #EEECF5;
+}
+
+footer h5 a, footer h5 a:hover {
+    text-decoration: none;
+    color: black;
+    border-bottom: 4px solid #D2C1DD;
+    font-family: 'Signika', sans-serif;
+    cursor: context-menu;
+}
+
+footer .contact {
+    margin-top: 5%;
+    color: #9087BF;
+    font-family: Roboto, ;
+}
+
+.footer .contact .signs i {
+    padding: 30px;
+    margin-bottom: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+footer .map {
+    position: relative;
+    overflow: hidden;
+}
+
+/* TO TOP  */
+
+.to__top {
+    right: 20px;
+    bottom: 40px;
+    z-index: 1;
+    position: fixed;
+}
+
+.to__top .toTop__link {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.to__top i {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    line-height: 39px;
+    font-size: 2.5rem;
+    color: #4E4998;
+    text-align: center;
+}
+
+/* // back-to-top button visible */
+
+.to__top .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
