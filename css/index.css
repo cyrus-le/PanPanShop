@@ -44,7 +44,7 @@ header ul li {
 
 header ul li a {
     color: black;
-    text-decoration: none;
+
 }
 
 header ul li.active a {
@@ -264,13 +264,10 @@ header ul li i {
     font-family: 'Signika', sans-serif;
 }
 
-.left__blog {
+.left__blog, .right__blog {
     width: 40%;
 }
 
-.right__blog {
-    width: 40%;
-}
 
 .blog .line {
     width: 20%;
@@ -475,8 +472,6 @@ footer .contact {
     color: #9087BF;
     font-family: Roboto, ;
 }
-
-
 
 footer .contact .signs i {
     margin-bottom: 10px;
